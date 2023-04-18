@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+header{
+    font-family: 'Poppins';
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    font-size: 1.1rem;
+    height: 80px;
+}
+header p{
+    opacity: 0;
+    transition: .1s;
+    animation: leftanimation 1s ease forwards;
+}
+header ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    padding: 5px;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: black;
+    opacity: 0;
+    transition: .1s;
+    animation: linkanimation .5s ease forwards;
+    animation-delay: calc(.5s / var(--i));
+}
+header ul li a:hover{
+    color: rgb(87, 19, 19); 
+}
+header div#menu-icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+header div#menu-icon span{
+    display: none;
+    width: 30px;
+    height: 3px;
+    transition: .5s all;
+    background-color: black;
+}
+header div#menu-icon span#bar{
+    width: 25px;
+}
+header div.on span#bar{
+    transform: translateX(200px);
+    opacity: 0;
+}
+header div.on span#rotate1{
+    transform: translateY(9px) rotate(45deg);
+    background-color: rgb(87, 19, 19);
+}
+header div.on span#rotate2{
+    transform: translateY(-7px) rotate(-45deg);
+    background-color: rgb(87, 19, 19);
+}
+
+div#container-first{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+div#container-first-info{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Poppins';
+    font-weight: 900;
+}
+div#container-first-info div img{
+    width: calc(100%/3);
+    animation: photoanimation 5s linear infinite;
+    position: absolute;
+    left: 70%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+div#container-first-info div#box-photo{
+    width: 40vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+div#container-first-info div#box-photo #panel{
+    width: calc(100%/2.5);
+    background-color: rgb(87, 19, 19);
+    height: 400px;
+    animation: panelanimation 5s linear infinite;
+}
+
+div#container-first-info div#box-message div{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    padding: 20px;
+}
+div#container-first-info div#box-message div h2{
+    opacity: 0;
+    animation: rightanimation 1s ease forwards;
+    animation-delay: .5s;
+    width: 100%;
+}
+div#container-first-info div#box-message div h3:first-child{
+    opacity: 0;
+    animation: topanimation 1s ease forwards;
+}
+div#container-first-info div#box-message div h3:last-child{
+    opacity: 0;
+    animation: bottomanimation 1s ease forwards;
+}
+div#container-first-info div#box-message div#container-message div#info-container{
+    font-size: 1.5rem;
+    gap: 10px;
+}
+div#container-first-info div#box-message div#container-message div#social-container{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5rem;
+    gap: 10px;
+}
+div#container-first-info div#box-message div#container-message div#social-container a{
+    display: flex;
+    text-decoration: none;
+    border: 2px solid rgb(87, 19, 19);
+    padding: 5px;
+    border-radius: 50%;
+    color: rgb(87, 19, 19);
+    align-items: center;
+    opacity: 0;
+    transition: .1s all;
+    animation: rightanimation 1s ease forwards;
+    animation-delay: calc(1s / var(--i));
+}
+div#container-first-info div#box-message div#container-message div#social-container a:hover{
+    background-color: rgb(87, 19, 19);
+    color: white;
+    box-shadow: 0px 0px 20px rgb(87, 19, 19) ;
+}
+div#container-first-info div#box-message div p{
+    min-width: 100%;
+}
+div#container-first-info div#box-message div span{
+    color: rgb(87, 19, 19) ;
+}
+div#container-first-info div#box-message input{
+    width: 50%;
+    padding: 10px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border: 3px solid rgb(87, 19, 19);
+    background-color: rgb(87, 19, 19);
+    color: white;
+    border-radius: 20px; 
+    font-family: 'Poppins';
+    margin-top: 10px;
+    transition: .15s all;
+}
+div#container-first-info div#box-message div input:hover{
+    border-color: rgb(143, 52, 52);
+    background-color: white;
+    color: rgb(87, 19, 19);
+    box-shadow: 0px 0px 20px rgb(87, 19, 19);
+}
+div#container-first-info i#arrowdown{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    font-size: 3rem;
+    transition: 5s all;
+    animation: arrowanimation .5s linear infinite;
+
+}
+@media screen and (max-width: 1200px) {
+    header{
+        /* font-size: 1.4rem; */
+    }
+    div#container-first-info div#box-message div#container-message div#info-container{
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width: 940px) {
+    header{
+        /* font-size: 1.4rem; */
+    }
+    div#container-first-info div#box-message div#container-message div#info-container{
+        font-size: 1.1rem;
+    }
+    div#container-first-info div#box-photo #panel{
+        height: 300px;
+    }
+}
+@media screen and (max-width: 800px) {
+    div#container-first-info{
+        display: flex;
+        flex-direction: column;
+    }
+    div#container-first-info div#box-photo, div#container-first-info div#box-message{
+        width: 100vw;
+        display: flex;
+    }
+    div#container-first-info div#box-message{
+        height: 100%;
+        font-size: 1rem;
+        margin-top: 50px;
+    }
+    div#container-first-info div#box-message div#container-social-input{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: calc(100vw/2);
+        align-items: center;
+    }
+    
+    div#container-first-info div#box-message div#container-message div#info-container{
+        font-size: 1.2rem;
+        width: calc(100vw/2);
+    }
+    div#container-first-info div#box-message div#container-message{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+    div#container-first-info div#box-photo #panel{
+        width: calc(100%/5);
+        height: 200px;
+    }
+    div#container-first-info div#box-photo img{
+        width: 200px;
+        left: 45%;
+    }
+}
+@media screen and (max-width: 745px) {
+    header ul{
+        position: fixed;
+        flex-direction: column;
+        background-color: rgb(87, 19, 19);
+        top: 80px;
+        right: -200%;
+        width: 300px;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        z-index: 100;
+    }
+    header ul.on{
+        transition: .5s all;
+        right: 0;
+    }
+    header ul.on a{
+        color: white;
+    }
+    header ul.on a:hover{
+        color: rgb(111, 57, 57);
+    }
+
+    header div#menu-icon{
+        padding: 10px;
+    }
+    header div#menu-icon span{
+        display: block;
+    }
+    div#container-first-info div#box-message div#container-message div#info-container{
+        font-size: 1rem;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 660px) {
+    div#container-first-info div#box-message div#container-social-input input{
+        padding: 5px;
+        min-width: 120px;
+    }
+}
+@media screen and (max-width: 460px) {
+    div#container-first-info div#box-message h2, div#container-first-info div#box-message h3{
+        overflow: hidden;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin: 0;
+    }
+    div#container-first-info div#box-message div#container-message{
+        flex-direction: column;
+    }
+    div#container-first-info div#box-message div#container-message div{
+        width: 100vw !important;
+    }
+    div#container-first-info div#box-message div#container-message div#social-container a{
+        font-size:.7em;
+        padding: 5px;
+    }
+    div#container-first-info div#box-message div#container-social-input{
+        flex-direction: row;
+    }
+    div#container-first-info div#box-message div#container-message div#info-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: .8em;
+    }
+}
+@media screen and (max-width: 340px) {
+    div#container-first-info div#box-message div#container-message{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+        margin: 0;
+    }
+    div#container-first-info div#box-message div#container-message div#social-container{
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        overflow: hidden;
+    }
+    div#container-first-info div#box-message div#container-social-input{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+        flex-direction: column;
+        width: 100vw;
+    }
+    div#container-first-info div#box-message div#container-social-input #button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    div#container-first-info div#box-message div#container-social-input input{
+        margin-top: 0;
+        font-size: .5em;
+        text-align: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+}
+
+
+@keyframes photoanimation {
+    0%{
+        transform: translateX(-50%); 
+    }
+    50%{
+        transform: translateX(-52%); 
+    }
+    70%{
+        transform: translateX(-50%); 
+    }
+    80%{
+        transform: translateX(-48%); 
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
+@keyframes panelanimation {
+    0%{
+        transform: translate(30%, 0%); 
+    }
+    50%{
+        transform: translate(32%, 0%); 
+    }
+    70%{
+        transform: translate(30%, 0%); 
+    }
+    80%{
+        transform: translate(28%, 0%); 
+    }
+    100%{
+        transform: translate(30%, 0%);
+    }
+}
+@keyframes arrowanimation {
+    0%{
+        transform: translate(-50%, 0%); 
+    }
+    50%{
+        transform: translate(-50%, -10%); 
+    }
+    100%{
+        transform: translate(-50%, 0%);
+    }
+}
+@keyframes rightanimation {
+    0%{
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes leftanimation {
+    0%{
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes topanimation {
+    0%{
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes bottomanimation {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes linkanimation {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes baranimation {
+    0%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+}

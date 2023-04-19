@@ -54,7 +54,7 @@ header div#menu-icon span{
     background-color: black;
 }
 header div#menu-icon span#bar{
-    width: 25px;
+    width: 20px;
 }
 header div.on span#bar{
     transform: translateX(200px);
@@ -257,15 +257,15 @@ div#container-first-info i#arrowdown{
         background-color: rgb(87, 19, 19);
         top: 80px;
         right: -200%;
-        width: 300px;
+        width: 100%;
         padding: 20px;
+        transition: .5s all;
         justify-content: center;
         align-items: center;
         gap: 50px;
         z-index: 100;
     }
     header ul.on{
-        transition: .5s all;
         right: 0;
     }
     header ul.on a{

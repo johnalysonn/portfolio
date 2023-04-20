@@ -161,21 +161,23 @@ div#container-first-info div#box-message div p{
 div#container-first-info div#box-message div span{
     color: rgb(87, 19, 19) ;
 }
-div#container-first-info div#box-message input{
+div#container-first-info div#box-message a#btn{
     width: 50%;
     padding: 10px;
+    font-size: .9rem;
+    text-align: center;
     background-color: transparent;
     outline: none;
-    border: none;
     border: 3px solid rgb(87, 19, 19);
     background-color: rgb(87, 19, 19);
     color: white;
     border-radius: 20px; 
-    font-family: 'Poppins';
+    font-weight: normal;
     margin-top: 10px;
     transition: .15s all;
+    text-decoration: none;
 }
-div#container-first-info div#box-message div input:hover{
+div#container-first-info div#box-message div a#btn:hover{
     border-color: rgb(143, 52, 52);
     background-color: white;
     color: rgb(87, 19, 19);
@@ -285,13 +287,12 @@ div#container-first-info i#arrowdown{
         font-size: 1rem;
         justify-content: center;
     }
-}
-@media screen and (max-width: 660px) {
-    div#container-first-info div#box-message div#container-social-input input{
+    div#container-first-info div#box-message div#container-social-input a#btn{
         padding: 5px;
         min-width: 120px;
     }
 }
+
 @media screen and (max-width: 460px) {
     div#container-first-info div#box-message h2, div#container-first-info div#box-message h3{
         overflow: hidden;
@@ -352,7 +353,7 @@ div#container-first-info i#arrowdown{
         justify-content: center;
         align-items: center;
     }
-    div#container-first-info div#box-message div#container-social-input input{
+    div#container-first-info div#box-message div#container-social-input a#btn{
         margin-top: 0;
         font-size: .5em;
         text-align: center;

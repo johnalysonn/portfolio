@@ -6,20 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/46c049acbd.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"></script> -->
     <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
-    <title>Portifolio</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>John Alyson</title>
 </head>
 <body>
     <main>
         <div id="container-first">
             <header>
-                <p>Portifólio.</p>
+                <a href="johnalysonn.github.io/portfolio"><img src="img/logo.png" alt="logo"></a>
         
                 <ul id="navbar">
-                    <li><a href="#" style="--i:4;">Quem sou eu</a></li>
-                    <li><a href="#" style="--i:3;">Sobre</a></li>
-                    <li><a href="#" style="--i:2;">Projetos</a></li>
-                    <li><a href="#" style="--i:1;">Contato</a></li>
+                    <li><a href="#" style="--i:4;" id="active">Home</a></li>
+                    <li><a href="#container-about" style="--i:3;">About Me</a></li>
+                    <li><a href="#container-portfolio" style="--i:2;">Portfolio</a></li>
+                    <li><a href="#container-skills" style="--i:1;">Skills</a></li>
+                    <li><a href="#footer" style="--i:1;">Contact</a></li>
+
                 </ul>
                 <div id="menu-icon" class="" >
                     <span id="rotate1"></span>
@@ -31,9 +37,9 @@
                 <div id="box-message">
                     <div id="container-message">
                         <div id="info-container">
-                            <h3>Olá, como vai?</h3>
-                            <h2>Meu nome é <span id="name">John Alyson</span></h2>
-                            <h3>Eu sou um <span class="multiple-text"></span></h3>
+                            <h3>Hi, how are you?</h3>
+                            <h2>My name is <span id="name">John Alyson</span></h2>
+                            <h3>I'm a <span class="multiple-text"></span></h3>
                         </div>
                         <div id="container-social-input">
                             <div id="social-container">
@@ -42,21 +48,223 @@
                                 <a target="_blank" style="--i:1.5;" href="https://github.com/johnalysonn"><i id="github" class='bx bxl-github'></i></a>
                             </div>
                             <div id="button-container">
-                                <a id="btn"href="cv/curriculo.pdf" download="cv/curriculo.pdf">Download CV</a>
+                                <a id="btn"href="#container-about">More About Me</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div id="box-photo">
-                    <div id="panel"></div>
                     <img src="img/foto.png" alt="Minha foto">
                 </div>
-                <i id="arrowdown"class='bx bxs-chevron-down'></i>
+            </div>
+        </div>
+        <div id="container-about">
+            <div id="container-title-about">
+                <fieldset>
+                    <legend>
+                        About Me
+                    </legend>
+                </fieldset>
+            </div>
+            <div id="about-info">
+                <div id="container-about-img" >
+                    <img src="img/foto-about.png" alt="John Alyson" data-aos="fade-right" data-aos-duration="800">
+                </div>
+                <div id="container-about-text">
+                    <div id="box-about-text">
+                        <p data-aos="fade-left" data-aos-duration="500">
+                            Ei, galera! Eu sou o John Alyson, tenho 18 anos, sou técnico de informática e atualmente estou cursando Análise e Desenvolvimento de Sistemas. Sabe, eu simplesmente amo programar! É como se eu estivesse criando algo do zero, uma obra de arte que pode resolver problemas e tornar a vida das pessoas mais fácil.
+                        </p>
+                        <p data-aos="fade-left" data-aos-duration="800">
+                            A cada nova tecnologia que aprendo, sinto uma emoção incrível, um misto de empolgação e desafio. É como se eu estivesse descobrindo um novo mundo, com novas possibilidades e limites a serem ultrapassados, a programação é muito mais do que um trabalho, é uma paixão, um hobby e um estilo de vida. Estou animado para seguir minha carreira na área de tecnologia e ver onde isso me levará!
+                        </p>
+                    </div>
+                    <div id="container-button-about">
+                        <a id="btn"href="cv/curriculo.pdf" download="cv/curriculo.pdf">Download CV</a>
+                        <a id="btn-github"target="_blank" href="https://github.com/johnalysonn"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-custom-border1"></div>
+        <div id="container-portfolio">
+            <div id="container-content">
+                <div id="box-text">
+                    <p>Projects</p>
+                </div>
+                <div id="box-content-main">
+                    <div id="container-text">
+                        <div id="box-portfolio-text">
+                            <div id="portfolio-text">
+                                <div id="div-port" >
+                                    <p data-aos="fade-down" data-aos-duration="1100">p</p>
+                                    <p data-aos="fade-down" data-aos-duration="900">o</p>
+                                    <p data-aos="fade-down" data-aos-duration="600">r</p>
+                                    <p data-aos="fade-down" data-aos-duration="300">t</p>
+                                </div>
+                                <div>
+                                    <p id="div-folio"  data-aos="fade-up" data-aos-duration="300" data-aos-delay="1000">f</p>
+                                    <p id="div-folio"  data-aos="fade-up" data-aos-duration="600" data-aos-delay="1000">ó</p>
+                                    <p id="div-folio"  data-aos="fade-up" data-aos-duration="900" data-aos-delay="1000">l</p>
+                                    <p id="div-folio"  data-aos="fade-up" data-aos-duration="1100" data-aos-delay="1000">i</p>
+                                    <p id="div-folio"  data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1000">o</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="box-projects">
+                        <div id="projects-models">
+                            <ul>
+                                <li class="all ativo">All</li>
+                                <li class="systems">Systems</li>
+                                <li class="websites">Web Sites</li>
+                                <li class="landingpages">Landing Pages</li>
+                            </ul>
+                        </div>
+                        <div id="projects-armazenamento">
+                            <ul>
+                                <li id="system" class="main-list ativo">
+                                    <img src="img/homeschool.png" alt="Simulação ensino EAD">
+                                    <div id="box-info-project">
+                                        <div id="info">
+                                            <h3>HomeSchool</h3>
+                                            <p>Sistema completo que simula o ensino à distância.</p>
+                                        </div>
+                                        <div id="technologies">
+                                            <ul>
+                                                <li><i class='bx bxl-html5'></i></li>
+                                                <li><i class='bx bxl-css3'></i></li>
+                                                <li><i class='bx bxl-javascript'></i></li>
+                                                <li><i class="fa-brands fa-laravel"></i></li>
+                                                <li><i class='bx bxl-bootstrap b'></i></li>
+                                            </ul>
+                                        </div>
+                                        <div id="button-project">
+                                            <a href="https://github.com/johnalysonn/homeschool"><i id="github" class='bx bxl-github'></i></a>
+                                            <label><i class='bx bx-play off' ></i></label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li id="website" class="main-list ativo">
+                                    <img src="img/calculator.png" alt="Calculadora">
+                                    <div id="box-info-project" style="color: white;">
+                                        <div id="info">
+                                            <h3>Calculadora</h3>
+                                            <p>Calculadora virtual com as quatro operações básicas</p>
+                                        </div>
+                                        <div id="technologies">
+                                            <ul>
+                                                <li><i class='bx bxl-html5'></i></li>
+                                                <li><i class='bx bxl-css3'></i></li>
+                                                <li><i class='bx bxl-javascript'></i></li>
+                                            </ul>
+                                        </div>
+                                        <div id="button-project">
+                                            <a href="https://github.com/johnalysonn/calculator"><i id="github" class='bx bxl-github' style="color: white;"></i></a>
+                                            <a target="_blank" href="https://johnalysonn.github.io/calculator-simulator/calculator/"><i class='bx bx-play on' ></i></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li id="landingpage" class="main-list">
+                                    <p style="color: white;">Sem landing pages no momento...</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-custom-border2">
+        </div>
+        <div id="container-skills">
+            <div id="box-text">
+                <p>What I do</p>
+            </div>
+            <div id="container-skills-content">
+                <div id="box-skills">
+                    <div id="box-text-skills">
+                        <label>Skills</label>
+                    </div>
+                    <div id="skills">
+                        <div>
+                            <i class='bx bxl-html5'></i>
+                            <label>html 5</label>
+                        </div>
+                        <div>
+                            <i class='bx bxl-css3'></i>
+                            <label>css 3</label>
+                        </div>
+                        <div>
+                            <i class='bx bxl-javascript'></i>
+                            <label>js</label>
+                        </div>
+                        <div id="box-laravel">
+                            <i class="fa-brands fa-laravel"></i>
+                            <label>laravel</label>
+                        </div>
+                        <div>
+                            <i class='bx bxs-data'></i>
+                            <label>mysql</label>
+                        </div>
+                        <div>
+                            <i class='bx bxl-git'></i>
+                            <label>git</label>
+                        </div>
+                        <div>
+                            <i class='bx bxl-bootstrap'></i>
+                            <label>bootstrap</label>
+                        </div>
+                        <div>
+                            <i class='bx bxl-github' ></i>
+                            <label>github</label>
+                        </div>
+                        <div>
+                            <i class='bx bxl-figma' ></i>
+                            <label>figma</label>
+                        </div>
+                        <div>
+                            <i class='bx bxl-visual-studio'></i>
+                            <label>vs code</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div id="container-info-footer">
+                <div>
+                    <img src="img/logo-footer.png" alt="Logo" title="Logo">
+                </div>
+                <div class="list-info" id="box-datas">
+                    <p>contact me</p>
+                    <ul>
+                        <li><i class='bx bx-envelope'></i>johnalyson6633@gmail.com</li>
+                        <li><i class='bx bx-phone'></i>+55 (85) 982103822</li>
+                    </ul>
+                </div>
+                <div class="list-info">
+                    <p>social</p>
+                    <ul>
+                        <li>
+                            <a target="_blank" href="https://www.linkedin.com/in/john-alyson-989bb623a/"><i id="linkedin" class='bx bxl-linkedin'></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.instagram.com/john_alysonn/"><i id="insta" class='bx bxl-instagram-alt'></i></a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://github.com/johnalysonn"><i id="github" class='bx bxl-github'></i></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </main>
 
     <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

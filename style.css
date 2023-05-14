@@ -941,7 +941,6 @@ div#footer div#container-info-footer div#box-datas ul li i{
     div#container-first-info div#box-message div#container-social-input{
         flex-direction: row;
         overflow-y: hidden;
-        background-color: red;
     }
 
     /* ABOUT ME */

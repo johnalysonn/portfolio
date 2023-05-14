@@ -696,7 +696,7 @@ div#footer{
 div#footer div#container-info-footer{
     width: 100%;
     padding: 80px;
-    background-image: url(/img/bg-footer.png);
+    background-image: url(img/bg-footer.png);
     background-repeat: no-repeat;
     display: flex;
     justify-content: space-around;

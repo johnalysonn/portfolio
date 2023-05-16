@@ -310,7 +310,7 @@ clip-path: polygon(0 0, 100% 100%, 100% 100%, 0% 100%);
 /* Portfolio */
    
 div#container-portfolio{
-    min-height: 100vh;
+    min-height: 100vh !important;
     width: 100vw;
     background-color: black;
 }
@@ -326,7 +326,6 @@ div#container-content div#box-text{
     font-family: 'Poppins', sans-serif;
     font-size: 1.2rem;
     font-weight: bold;
-    margin-top: 40px;
     width: 100vw;
     text-align: center;
     color: white;
@@ -334,7 +333,7 @@ div#container-content div#box-text{
 }
 div#container-content div#box-content-main{
     display: flex;
-    height: 80vh;
+    min-height: 80vh;
     justify-content: space-between;
     align-items: center;
     width: 100vw;
@@ -348,8 +347,7 @@ div#container-content div#container-text{
     align-items: center;
 }
 div#container-content div#box-portfolio-text{
-    width: 65%;
-    height: 80%;
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -358,7 +356,7 @@ div#container-content div#box-portfolio-text{
 
 div#container-content div#portfolio-text{
     width: 100%;
-    height: 100%;
+    height: 80%;
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -402,7 +400,7 @@ div#box-projects{
     padding-top: 2%;
     flex-direction: column;
     gap: 30px;
-    height: 100%;
+    min-height: 80vh;
 }
     /* Project Models */
 
@@ -446,6 +444,7 @@ div#box-projects div#projects-models ul li.ativo{
     /* Projects armazenamento */
 
 div#box-projects div#projects-armazenamento ul{
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -610,12 +609,16 @@ div#container-skills{
 }
 div#container-skills div#box-text{
     width: 100vw;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 1.2rem;
 }
 div#container-skills div#container-skills-content{
+    height: 100%;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -623,14 +626,14 @@ div#container-skills div#container-skills-content{
 }
 div#container-skills div#box-skills{
     padding: 20px;
+    height: 100%;
     width: 80%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 div#container-skills div#box-text-skills{
-    flex: 1;
-    height: 100%;
+    /* flex: 1; */
     padding: 10px;
     align-items: center;
     text-align: center;
@@ -639,9 +642,10 @@ div#container-skills div#box-text-skills{
     letter-spacing: 1px;
     font-size: 1rem;
     transform: rotate(-90deg);
+    
 }
 div#container-skills div#box-text-skills label{
-    padding: 5px;
+    padding: 10px;
     position: relative;
 }
 div#container-skills div#box-text-skills label::before{
@@ -703,13 +707,18 @@ div#footer div#container-info-footer{
     align-items: center;
     color: white;
 }
-div#footer div#container-info-footer p{
-    font-size: 1rem;
-    font-weight: bold;
-    font-family: 'Poppins';
-    text-transform: uppercase;
+div#footer div#container-info-footer div#container-data-social{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 100px;
+    padding: 20px;
 }
-div#footer div#container-info-footer div:last-child ul{
+div#footer div#container-info-footer div#container-data-social div{
+    display: flex;
+    flex-direction: column;
+}
+div#footer div#container-info-footer div#container-data-social div:last-child ul{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -718,6 +727,13 @@ div#footer div#container-info-footer div:last-child ul{
     font-size: 1.5rem;
     text-decoration: none;
 }
+div#footer div#container-info-footer p{
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Poppins';
+    text-transform: uppercase;
+}
+
 div#footer div#container-info-footer div:last-child ul li a{
     color: rgb(205, 140, 140);
     transition: .2s all;
@@ -758,6 +774,32 @@ div#footer div#container-info-footer div#box-datas ul li i{
     div#container-first-info div#box-message div#container-message div#info-container{
         font-size: 1.3rem;
     }
+    div#box-projects div#projects-armazenamento ul li{ 
+        width: 350px;
+    }
+    div#box-projects{
+        flex: 4;
+    }
+
+    /* SKILLS */
+
+    div#container-skills div#skills div{
+        width: 100px;
+        height: 100px;
+        padding: 0;
+        font-size: .8rem;
+    }
+    div#container-skills div#skills div i{
+        font-size: 4.5rem;
+    }
+    div#container-skills div#box-text-skills label{
+        /* background-color: red; */
+        padding: 0;
+    }
+    div#container-skills div#box-text-skills label::before{
+        width: 100%;
+        bottom: -5px;
+    }
 }
 @media screen and (max-width: 940px) {
     div#container-first-info div#box-message div#container-message div#info-container{
@@ -777,6 +819,16 @@ div#footer div#container-info-footer div#box-datas ul li i{
     div#container-button-about a{
         min-width: 120px;
     }
+
+    /* portfolio */
+
+    div#container-content div#portfolio-text div{
+        font-size: 1.8rem;
+    }
+    div#box-projects div#projects-armazenamento ul li div#box-info-project div#technologies ul li i{
+        font-size: 1rem;
+    }
+
 }
 @media screen and (max-width: 800px) {
     header{
@@ -831,6 +883,7 @@ div#footer div#container-info-footer div#box-datas ul li i{
         padding: 5px;
         min-width: 120px;
     }
+
 }
 @media screen and (max-width: 745px) {
     header ul{
@@ -910,6 +963,96 @@ div#footer div#container-info-footer div#box-datas ul li i{
         padding: 8px 0px;
         font-size: .7rem;
     }
+
+    /* PORTFOLIO */
+
+    div#container-content{
+        /* min-height: 100vh; */
+    }
+    div#container-content div#box-text{
+       display: none;
+    }
+    div#container-content div#box-content-main{
+        flex-direction: column;  
+        min-height: 60vh;
+    }
+    div#container-content div#container-text{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    div#container-content div#box-portfolio-text{
+        width: 100vw;
+        height: 80%;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    div#container-content div#portfolio-text{
+        gap: 10px;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+    }
+    div#container-content div#portfolio-text div{
+        display: flex;
+        flex-direction: row;
+        padding: 0px;
+        font-size: 1.5rem;
+        min-width: 30%;
+        gap: 10px;
+    }
+    div#box-projects{
+        width: 100vw;
+        padding: 20px;
+    }
+    div#box-projects div#projects-armazenamento ul{
+        height: 100%;
+    }
+    div#box-projects div#projects-armazenamento ul li{
+        width: 350px;
+    }
+    div#box-projects div#projects-armazenamento ul li#landingpage{
+        height: 150px;
+    }
+
+    /* Skills */
+    div#container-skills div#box-skills{
+        width: 100%;
+    }
+    div#container-skills div#box-text-skills{
+        flex: 1;
+        width: auto;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    div#container-skills div#box-text-skills label{
+        font-size: .8rem;
+        letter-spacing: 1px;
+    }
+    div#container-skills div#skills{
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* FOOTER */
+
+    div#footer div#container-info-footer{
+        flex-direction: column;
+        gap: 30px;
+        padding: 40px 0;
+    }
+    div#footer div#container-info-footer div#container-data-social{
+        width: 100%;
+        justify-content: space-around;
+    }
 }
 
 @media screen and (max-width: 460px) {
@@ -959,7 +1102,104 @@ div#footer div#container-info-footer div#box-datas ul li i{
     div#container-title-about fieldset legend{
         font-size: 1rem;
     }
-    
+
+    /* PORTFOLIO */
+
+    div#box-projects div#projects-models ul li{
+        cursor: pointer;
+        display: block;
+        font-family: 'Poppins';
+        border: 1px solid black;
+        box-shadow: 0px 0px 10px #393737;
+        color: #9D9696;
+        background-color: transparent;
+        padding: 5px 10px;
+        font-size: 0.5rem;
+        font-weight: 600;
+        transition: .5s all;
+    }
+    div#box-projects div#projects-armazenamento ul li#landingpage{
+        height: 100px;
+        border-radius: 22px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 1px;
+        font-size: .8rem;
+        box-shadow: 0px 0px 10px #393737;
+    }
+    div#box-projects div#projects-armazenamento ul li div#box-info-project div#info{
+        display: flex;
+        text-align: center;
+        font-size: .8rem;
+    }
+    div#box-projects div#projects-armazenamento ul li div#box-info-project div#info p{
+        font-size: .6rem;
+    }
+    div#box-projects div#projects-armazenamento ul li div#box-info-project div#technologies ul li i{
+        font-size: .7rem;
+    }
+
+    div#box-projects div#projects-armazenamento ul li div#box-info-project div#technologies ul li i.fa-laravel{
+        font-size: .7rem;
+        font-weight: bold;
+    }
+    div#box-projects div#projects-armazenamento ul li div#box-info-project div#button-project i{
+        display: block !important;
+        font-size: 1.7rem;
+        color: white;
+    }
+    /* SKILLS */
+
+    div#container-skills div#box-skills{
+        justify-content: space-between;
+    }
+    div#container-skills div#box-skills{
+        width: 100%;
+    }
+    div#container-skills div#box-text-skills{
+        flex: 2;
+        justify-content: center;
+        align-items: center;
+    }
+    div#container-skills div#box-text-skills label{
+        font-size: .7rem;
+        letter-spacing: 1px;
+    }
+
+    div#container-skills div#skills div{
+        width: 80px;
+        height: 80px;
+        font-size: .6rem;
+        padding: 0;
+    }
+    div#container-skills div#skills div i{
+        font-size: 3rem;
+    }
+
+
+    /* FOOTER */
+    div#footer div#container-info-footer{
+        padding: 35px 0px;
+    }
+    div#footer div#container-info-footer div#container-data-social{
+        justify-content: space-between;
+        gap: 0;
+        padding: 10px;
+    }
+    div#footer div#container-info-footer div#container-data-social div:last-child ul{
+        font-size: 1.5rem;
+    }
+    div#footer div#container-info-footer div#box-datas ul li{
+        font-size: .8rem;
+    }
+    div#footer div#container-info-footer div#container-data-social div:last-child ul{
+        flex-direction: column !important;
+    }
+    div#footer div#container-info-footer div#box-datas ul{
+        gap: 20px;
+    }
 }
 @media screen and (max-width: 340px) {
     div#container-first-info div#box-message div#container-message div#info-container{
@@ -1005,7 +1245,43 @@ div#footer div#container-info-footer div#box-datas ul li i{
         text-align: center;
         justify-content: center;
     }
+    div#box-projects div#projects-armazenamento ul li div#box-info-project div#info{
+        display: flex;
+        text-align: center;
+        font-size: .7rem;
+        gap: 5px;
+    }
+    div#box-projects div#projects-armazenamento ul li div#box-info-project div#info p{
+        font-size: .5rem;
+    }
+    div#box-projects div#projects-armazenamento ul li div#box-info-project div#technologies ul li i{
+        font-size: .6rem;
+    }
 
+    div#box-projects div#projects-armazenamento ul li div#box-info-project div#technologies ul li i.fa-laravel{
+        font-size: .6rem;
+        font-weight: bold;
+    }
+    div#box-projects div#projects-armazenamento ul li div#box-info-project div#button-project{
+        padding-bottom: 5px;
+    }
+    div#box-projects div#projects-armazenamento ul li div#box-info-project div#button-project i{
+        display: block !important;
+        font-size: 1.1rem;
+        color: white;
+    }
+
+    /* SKILLS */
+
+    div#container-skills div#skills div{
+        width: 60px;
+        height: 60px;
+        font-size: .5rem;
+        padding: 0;
+    }
+    div#container-skills div#skills div i{
+        font-size: 2rem;
+    }
 }
 
 /* ANIMATIONS */

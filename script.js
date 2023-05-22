@@ -57,15 +57,17 @@ function showList(list, button = 'all'){
     })
     if (button == 'systems') {
         list[0].classList.add('ativo');
+        list[1].classList.add('ativo');
     } 
     if (button == 'websites') {
-        list[1].classList.add('ativo');
+        list[2].classList.add('ativo');
     }
     if (button == 'all'){
         list[0].classList.add('ativo');
         list[1].classList.add('ativo');
+        list[2].classList.add('ativo');
     }
     if (button == 'landingpages'){
-        list[2].classList.add('ativo');
+        list[3].classList.add('ativo');
     }
 }

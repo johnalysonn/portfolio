@@ -193,6 +193,7 @@ div#container-first-info i#arrowdown{
 div#container-about{
     width: 100vw;
     min-height: 100vh;
+    padding: 150px 0;
     font-family: 'Poppins', sans-serif;
 }
 div#container-title-about{
@@ -227,8 +228,6 @@ fieldset {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: green; */
-
  }
  div#about-info div#container-about-img img{
     width: calc(100%/1.3);
@@ -313,6 +312,7 @@ div#container-portfolio{
     min-height: 100vh !important;
     width: 100vw;
     background-color: black;
+    padding: 100px 0;
 }
 
 div#container-content{
@@ -458,21 +458,9 @@ div#box-projects div#projects-armazenamento ul li{
     width: 400px;
     position: relative;
 }
-div#box-projects div#projects-armazenamento ul li#landingpage{
-    height: 200px;
-    border-radius: 22px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Poppins', sans-serif;
-    letter-spacing: 1px;
-    box-shadow: 0px 0px 10px #393737;
-}
+
 div#box-projects div#projects-armazenamento ul li.ativo{
     display: block;
-}
-div#box-projects div#projects-armazenamento ul li#landingpage.ativo{
-    display: flex;
 }
 div#box-projects div#projects-armazenamento ul li img{
     width: 100%;
@@ -600,11 +588,12 @@ div#box-projects div#projects-armazenamento ul li div{
 /* Skills */
 
 div#container-skills{
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
+    padding: 100px 0;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: column;
 }
 div#container-skills div#box-text{
@@ -633,7 +622,6 @@ div#container-skills div#box-skills{
     align-items: center;
 }
 div#container-skills div#box-text-skills{
-    /* flex: 1; */
     padding: 10px;
     align-items: center;
     text-align: center;
@@ -1018,9 +1006,6 @@ div#footer div#container-info-footer div#box-datas ul li i{
     div#box-projects div#projects-armazenamento ul li{
         width: 350px;
     }
-    div#box-projects div#projects-armazenamento ul li#landingpage{
-        height: 150px;
-    }
 
     /* Skills */
     div#container-skills div#box-skills{
@@ -1117,17 +1102,6 @@ div#footer div#container-info-footer div#box-datas ul li i{
         font-size: 0.5rem;
         font-weight: 600;
         transition: .5s all;
-    }
-    div#box-projects div#projects-armazenamento ul li#landingpage{
-        height: 100px;
-        border-radius: 22px;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Poppins', sans-serif;
-        letter-spacing: 1px;
-        font-size: .8rem;
-        box-shadow: 0px 0px 10px #393737;
     }
     div#box-projects div#projects-armazenamento ul li div#box-info-project div#info{
         display: flex;

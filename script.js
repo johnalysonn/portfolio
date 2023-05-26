@@ -1,3 +1,4 @@
+// typed effect 
 var typed = new Typed('.multiple-text', {
     strings: ["Web Developer", "Student"],
     typeSpeed: 100,
@@ -6,9 +7,16 @@ var typed = new Typed('.multiple-text', {
     loop: true
 })
 
+// menu
 var menu = document.querySelector('#menu-icon');
-var navbar = document.querySelector('#navbar')
+var navbar = document.querySelector('#navbar');
 
+// load
+var loading = document.querySelector('#load');
+var content = document.querySelector("#main");
+var body = document.body;
+
+// filter of projects
 menu.onclick = function(){
     menu.classList.toggle('on');
     navbar.classList.toggle('on');
@@ -17,6 +25,7 @@ menu.onclick = function(){
 const listAll = document.querySelectorAll("#projects-armazenamento ul li.main-list");
 const buttonAllModel = document.querySelectorAll("#projects-models ul li");
 const buttonAll = document.querySelectorAll("#projects-models .all");
+
 
 function removeClick(index){
     buttonAllModel.forEach((item) => {
@@ -73,3 +82,14 @@ function showList(list, button = 'all'){
         list[3].classList.add('ativo');
     }
 }
+
+// function of loading
+
+body.onload = setTimeout(function(){
+    const html = document.querySelector('html');
+    // console.log(html);
+    loading.style.display = "none";
+
+    html.style.overflowY = "scroll"
+    // body.style.overflow = "scroll";
+}, 3000) 

@@ -10,6 +10,23 @@
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
+html{
+    overflow: hidden;
+}
+div#load{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    position: fixed;
+    background-color: black;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+div#load img{
+    width: calc(100%/2.5);
+}
 header{
     font-family: 'Poppins';
     display: flex;

@@ -61,6 +61,7 @@ function showList(list, button = 'all'){
     } 
     if (button == 'websites') {
         list[2].classList.add('ativo');
+        list[3].classList.add('ativo');
     }
     if (button == 'all'){
         list[0].classList.add('ativo');

@@ -16,6 +16,9 @@ var loading = document.querySelector('#load');
 var content = document.querySelector("#main");
 var body = document.body;
 
+// elements
+const elements = document.querySelectorAll(".element-animation");
+
 // filter of projects
 menu.onclick = function(){
     menu.classList.toggle('on');
@@ -87,9 +90,18 @@ function showList(list, button = 'all'){
 
 body.onload = setTimeout(function(){
     const html = document.querySelector('html');
-    // console.log(html);
-    loading.style.display = "none";
+    const element_animation = document.querySelectorAll('.element-animation');
+    
+    innerDelayAnimation(elements);
 
-    html.style.overflowY = "scroll"
-    // body.style.overflow = "scroll";
+    loading.style.display = "none";
+    html.style.overflowY = "scroll";
+
+    
 }, 3000) 
+
+function innerDelayAnimation(elements){
+    elements.forEach(element =>
+        element.classList.add('delayAnimation')
+    );
+}

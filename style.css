@@ -18,14 +18,14 @@ div#load{
     width: 100vw;
     display: flex;
     position: fixed;
-    background-color: black;
+    background-color: #000000;
     z-index: 1;
     justify-content: center;
     align-items: center;
 }
 
 div#load img{
-    width: calc(100%/2.5);
+    /* width: calc(100%/5); */
 }
 header{
     font-family: 'Poppins';
@@ -128,19 +128,19 @@ div#container-first-info div#box-message div{
 }
 div#container-first-info div#box-message div h2{
     opacity: 0;
-    animation: rightanimation .8s ease forwards;
+    animation: rightanimation 1s ease forwards;
     width: 100%;
     animation-delay: 3000ms;
 }
 div#container-first-info div#box-message div h3:first-child{
     opacity: 0;
-    animation: topanimation .8s ease forwards;
+    animation: topanimation 1s ease forwards;
     animation-delay: 3000ms;
 
 }
 div#container-first-info div#box-message div h3:last-child{
     opacity: 0;
-    animation: bottomanimation .8s ease forwards;
+    animation: bottomanimation 1s ease forwards;
     animation-delay: 3000ms;
 
 }
@@ -164,7 +164,7 @@ div#container-first-info div#box-message div#container-message div#social-contai
     align-items: center;
     opacity: 0;
     transition: .1s all;
-    animation: rightanimation .5s ease forwards;
+    animation: rightanimation 1s ease forwards;
 }
 div#container-first-info div#box-message div#container-message div#social-container a:hover{
     background-color: rgb(87, 19, 19);

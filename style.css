@@ -136,13 +136,11 @@ div#container-first-info div#box-message div h3:first-child{
     opacity: 0;
     animation: topanimation 1s ease forwards;
     animation-delay: 3000ms;
-
 }
 div#container-first-info div#box-message div h3:last-child{
     opacity: 0;
     animation: bottomanimation 1s ease forwards;
     animation-delay: 3000ms;
-
 }
 div#container-first-info div#box-message div#container-message div#info-container{
     font-size: 1.5rem;
@@ -510,6 +508,11 @@ div#box-projects div#projects-armazenamento ul li div#box-info-project div#info{
 }
 div#box-projects div#projects-armazenamento ul li div#box-info-project div#info p{
     font-size: .8rem;
+    text-align: center;
+}
+div#box-projects div#projects-armazenamento ul li div#box-info-project div#info p#long-text{
+    font-size: .7rem;
+    text-align: center;
 }
 div#box-projects div#projects-armazenamento ul li div#box-info-project div#technologies{
     display: flex;
@@ -583,6 +586,7 @@ i.on{
     cursor: pointer;
     color: green !important;
 }
+
 div#box-projects div#projects-armazenamento ul li div p{
     font-size: .7rem;
 }
@@ -1125,6 +1129,9 @@ div#footer div#container-info-footer div#box-datas ul li i{
     div#box-projects div#projects-armazenamento ul li div#box-info-project div#info p{
         font-size: .6rem;
     }
+    div#box-projects div#projects-armazenamento ul li div#box-info-project div#info p#long-text{
+        font-size: .5rem;
+    }
     div#box-projects div#projects-armazenamento ul li div#box-info-project div#technologies ul li i{
         font-size: .7rem;
     }
@@ -1137,6 +1144,11 @@ div#footer div#container-info-footer div#box-datas ul li i{
         display: block !important;
         font-size: 1.7rem;
         color: white;
+    }
+    div#box-projects div#projects-armazenamento ul li div#box-info-project div#button-project button{
+        background-color: transparent !important;
+        border: none;
+        outline: none;
     }
     /* SKILLS */
 
@@ -1241,6 +1253,9 @@ div#footer div#container-info-footer div#box-datas ul li i{
     }
     div#box-projects div#projects-armazenamento ul li div#box-info-project div#info p{
         font-size: .5rem;
+    }
+    div#box-projects div#projects-armazenamento ul li div#box-info-project div#info p#long-text{
+        font-size: .4rem;
     }
     div#box-projects div#projects-armazenamento ul li div#box-info-project div#technologies ul li i{
         font-size: .6rem;

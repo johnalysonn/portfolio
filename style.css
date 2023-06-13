@@ -687,6 +687,7 @@ div#container-skills div#skills div{
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
+    transition: .2s all;
 }
 div#container-skills div#skills div i{
     font-size: 5rem;

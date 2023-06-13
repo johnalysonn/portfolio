@@ -44,6 +44,12 @@ Exibirá algumas tecnologias que eu tenho conhecimento e utilizei durante minha 
 Contendo algumas formas de contato, com telefone, email e redes sociais
 
 ![image](https://github.com/johnalysonn/portfolio/assets/104682781/21dd7e0c-2570-4f95-a41a-ff16f8babf2f)
+
+#### Loading
+O projeto apresenta uma tela de pre-carregamento com gif personalizado, a função dessa tela é que enquanto ela estar presente, o body, ou seja o corpo do projeto estará em carregamento, carregando imagens e efeitos. Para não haver problemas com os efeitos, optei por utilizar  javascript para adicionar uma classe nos elementos que lhes dará um delay na animação, tal delay será suficiente para o carregamento da página e a exibição dos efeito no momento exato.
+
+![John Alyson - Google Chrome 2023-06-13 11-29-02](https://github.com/johnalysonn/portfolio/assets/104682781/0ad0f48c-3b09-4742-88ad-882f0740dc1d)
+
 <hr>
 
 ### Todo o projeto está responsivo, ou seja, ele se adapta de acordo com o dispositivo.

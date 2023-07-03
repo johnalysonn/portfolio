@@ -10,21 +10,20 @@
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
+*::-webkit-scrollbar{
+    width: 15px;
+}
+*::-webkit-scrollbar-track {
+    background: white;
+}
+*::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: rgb(87, 19, 19);
+    border: 2px solid white;
+}
 html{
     overflow: hidden;
 }
-/* barra de rolagem */
-html::-webkit-scrollbar{
-    width: 10px;
-}
-html::-webkit-scrollbar-thumb {
-    border-radius: 50px;
-    background: rgb(87, 19, 19);
-}
-html::-webkit-scrollbar-track {
-    background: transparent;
-}
-/* fim barra de rolagem */
 
 div#load{
     height: 100vh;

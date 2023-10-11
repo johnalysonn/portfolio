@@ -155,13 +155,13 @@ div#container-first-info div#box-message div h3:last-child{
     animation-delay: 3000ms;
 }
 div#container-first-info div#box-message div#container-message div#info-container{
-    font-size: 1.5rem;
+    font-size: 2rem;
     gap: 10px;
 }
 div#container-first-info div#box-message div#container-message div#social-container{
     display: flex;
     flex-direction: row;
-    font-size: 1.5rem;
+    font-size: 2rem;
     gap: 10px;
 }
 div#container-first-info div#box-message div#container-message div#social-container a{
@@ -235,7 +235,7 @@ fieldset {
  }
  fieldset legend {
      padding: 0px 50px;
-     font-size: 1.3rem;
+     font-size: 2rem;
      font-weight: bold;
      letter-spacing: 0.045em;
  }
@@ -270,11 +270,12 @@ fieldset {
     text-align: left;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
     font-family: 'Roboto';
     font-weight: bold;
     padding: 30px;
     position: relative;
+    font-size: 1.3rem;
 }
 div#container-about-text div#box-about-text::after{
     content: '';
@@ -296,7 +297,7 @@ div#container-button-about a{
     align-items: center;
     text-align: center;
     width: 20%;
-    font-size: .9rem;
+    font-size: 1rem;
     padding: 5px;
     outline: none;
     border: 3px solid rgb(87, 19, 19);
@@ -308,7 +309,7 @@ div#container-button-about a{
     text-decoration: none;
 }
 div#container-button-about a#btn-github{
-    font-size: 1.5rem;
+    font-size: 2rem;
     width: 15%;
 }
 div#container-button-about a:hover{
@@ -348,7 +349,7 @@ div#container-content{
 }
 div#container-content div#box-text{
     font-family: 'Poppins', sans-serif;
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-weight: bold;
     width: 100vw;
     text-align: center;
@@ -623,8 +624,9 @@ div#container-skills{
     padding: 100px 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column;
+    gap: 100px;
 }
 div#container-skills div#box-text{
     width: 100vw;
@@ -634,7 +636,7 @@ div#container-skills div#box-text{
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 2rem;
 }
 div#container-skills div#container-skills-content{
     height: 100%;
@@ -721,6 +723,7 @@ div#footer div#container-info-footer{
     padding: 80px;
     background-image: url(img/bg-footer.png);
     background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: space-around;
     align-items: center;

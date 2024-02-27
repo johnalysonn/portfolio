@@ -1217,7 +1217,7 @@ div#footer div#container-info-footer div#box-datas ul li i{
         gap: 20px;
     }
 }
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 370px) {
     div#container-first-info div#box-message div#container-message div#info-container{
         height: auto;
     }
